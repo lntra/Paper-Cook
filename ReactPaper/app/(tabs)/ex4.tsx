@@ -2,16 +2,16 @@ import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
-
-import { Button } from 'react-native-paper';
-import ButtonEx from '@/components/ButtonEx';
+import ImageEx from '@/components/ImageEx';
 
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Ex1</Text>
+      <Text style={styles.title}>Ex4</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <ButtonEx name='Botão'></ButtonEx>
+      <ImageEx
+      url="https://picsum.photos/700"
+      ></ImageEx>
     </View>
   );
 }

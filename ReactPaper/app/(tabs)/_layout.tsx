@@ -29,7 +29,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
+          title: 'Ex1',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
@@ -48,9 +48,23 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="ex2"
         options={{
-          title: 'Tab Two',
+          title: 'Ex2',
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="ex3"
+        options={{
+          title: 'Ex3',
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="ex4"
+        options={{
+          title: 'Ex4',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
