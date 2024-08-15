@@ -9,9 +9,14 @@ export default function TabOneScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Ex4</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <ImageEx
-      url="https://picsum.photos/700"
-      ></ImageEx>
+      <div style={styles.img}>
+        <ImageEx
+          url="https://picsum.photos/700"
+        ></ImageEx>
+        <ImageEx
+          url="https://picsum.photos/700"
+        ></ImageEx>
+      </div>
     </View>
   );
 }
@@ -29,6 +34,10 @@ const styles = StyleSheet.create({
   separator: {
     marginVertical: 30,
     height: 1,
-    width: '80%',
+    width: '40%',
+  },
+  img: {
+    width: '40%',
+    display: 'flex'
   },
 });
