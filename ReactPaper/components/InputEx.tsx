@@ -2,12 +2,26 @@ import { StyleSheet } from 'react-native';
 
 import { TextInput } from 'react-native-paper';
 
-export default function InputEx() {
+type InputExProps = {
+  type: string;
+};
+
+export default function InputEx({ type }: InputExProps) {
+  
   return (
-      <TextInput
-      label="Password"
-      secureTextEntry
-      right={<TextInput.Icon icon="eye" />}
-      ></TextInput>
+      <>
+      {type === "text" && (
+        <TextInput
+          label="Text Input"
+          secureTextEntry={false} 
+        />
+      )}
+      {type === "password" && (
+        <TextInput
+          label="Password Input"
+          secureTextEntry={true} 
+        />
+      )}
+    </>
   );
 }

@@ -3,20 +3,23 @@ import { StyleSheet } from 'react-native';
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
 import ImageEx from '@/components/ImageEx';
+import Grid from '@/components/Grid';
+import ListItem from '@/components/List';
+
+const props = [
+  {title : 'Item 1' , description : 'Item 1 descrição'},
+  {title : 'Item 2' , description : 'Item 2 descrição'},
+  {title : 'Item 3' , description : 'Item 3 descrição'},
+  {title : 'Item 4' , description : 'Item 4 descrição'},
+]
 
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Ex4</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <div style={styles.img}>
-        <ImageEx
-          url="https://picsum.photos/700"
-        ></ImageEx>
-        <ImageEx
-          url="https://picsum.photos/700"
-        ></ImageEx>
-      </div>
+      <Text style={styles.title}>Item</Text>
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <ListItem props={props}></ListItem>
     </View>
   );
 }
