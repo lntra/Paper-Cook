@@ -13,7 +13,8 @@
 
 Para instalar o Paper Cook, siga estas etapas:
 
-git clone [<URL_DO_REPOSITORIO>](https://github.com/lntra/Paper-Cook.git)
+git clone [(https://github.com/lntra/Paper-Cook.git)](https://github.com/lntra/Paper-Cook.git)
+
 npm install
 
 #### Configuração dos seguintes arquivos
